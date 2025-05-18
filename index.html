@@ -7,69 +7,93 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form action="/signup" method="post">
-      <div class="form-item">
-        <label for="first-name">First Name</label>
-        <input
-          id="first-name"
-          name="firstName"
-          type="text"
-          required
-          autocomplete="given-name"
-        />
-      </div>
+    <aside class="image-section">
+      <div class="banner">Hej</div>
+    </aside>
 
-      <div class="form-item">
-        <label for="last-name">Last Name</label>
-        <input
-          id="last-name"
-          name="lastName"
-          type="text"
-          required
-          autocomplete="family-name"
-        />
-      </div>
+    <main class="form-section">
+      <div class="form-container">
+        <section class="text-section">
+          <h2>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            <em>now</em> to get started.
+          </h2>
+          <h2>You <em>know</em> you want to.</h2>
+        </section>
 
-      <div class="form-item">
-        <label for="email">Email</label>
-        <input
-          id="email"
-          name="email"
-          type="email"
-          required
-          autocomplete="email"
-        />
-      </div>
+        <form action="/signup" method="post">
+          <h3>Let’s do this!</h3>
 
-      <div class="form-item">
-        <label for="tel">Telephone</label>
-        <input id="tel" name="telephone" type="tel" autocomplete="tel" />
-      </div>
+          <fieldset class="input-section">
+            <div class="form-item">
+              <label for="first-name">First Name</label>
+              <input
+                id="first-name"
+                name="firstName"
+                type="text"
+                required
+                autocomplete="given-name"
+              />
+            </div>
 
-      <div class="form-item">
-        <label for="password">Password</label>
-        <input
-          id="password"
-          name="password"
-          type="password"
-          required
-          minlength="8"
-          autocomplete="new-password"
-        />
-      </div>
+            <div class="form-item">
+              <label for="last-name">Last Name</label>
+              <input
+                id="last-name"
+                name="lastName"
+                type="text"
+                required
+                autocomplete="family-name"
+              />
+            </div>
 
-      <div class="form-item">
-        <label for="confirm-password">Confirm Password</label>
-        <input
-          id="confirm-password"
-          name="confirmPassword"
-          type="password"
-          required
-          autocomplete="new-password"
-        />
-      </div>
+            <div class="form-item">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                autocomplete="email"
+              />
+            </div>
 
-      <button class="form-button" type="submit">Create Account</button>
-    </form>
+            <div class="form-item">
+              <label for="tel">Phone Number</label>
+              <input id="tel" name="phone" type="tel" autocomplete="tel" />
+            </div>
+
+            <div class="form-item">
+              <label for="password">Password</label>
+              <input
+                id="password"
+                name="password"
+                type="password"
+                required
+                minlength="8"
+                autocomplete="new-password"
+              />
+            </div>
+
+            <div class="form-item">
+              <label for="confirm-password">Confirm Password</label>
+              <input
+                id="confirm-password"
+                name="confirmPassword"
+                type="password"
+                required
+                autocomplete="new-password"
+              />
+            </div>
+          </fieldset>
+
+          <button class="form-button" type="submit">Create Account</button>
+          <p class="login-text">
+            Already have an account? <a href="/login">Log in</a>
+          </p>
+        </form>
+      </div>
+    </main>
   </body>
 </html>
